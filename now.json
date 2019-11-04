@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "transit-display-api",
+  "builds": [
+    { "src": "*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)$", "dest": "/$1.js"}
+  ]
+}
